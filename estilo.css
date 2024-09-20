@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Ovo&display=swap");
+
+/* GENERAL */
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    height: 100vh;
+    background-image: url("img/fondo-1600.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* NAVEGADOR*/
+header {
+    position: sticky;
+    top: 0;
+    background: rgb(255, 255, 255);
+    padding: 0px 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+}
+#logo {
+    width: 70px;
+}
+#menu li a {
+    font-size: 18px;
+}
+#menu a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 18px;
+    transition: all .2s;
+    font-family: "Ovo", serif;
+    font-weight: 400;
+    cursor: pointer;
+}
+#menu a:hover {
+    color: rgb(180, 162, 162);
+}
+
+/* NAVEGADOR PRIMER NIVEL */
+#menu {
+    list-style: none;
+    display: table;
+    margin: 25px;
+}
+#menu > li {
+    float: left;
+    position: relative;
+    line-height: 6px;
+    border-bottom: 2px solid transparent;
+    letter-spacing: 1px;
+}
+#menu > li:hover{
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+/*  NAVEGADOR SEGUNDO NIVEL */
+#oculto {
+    position: absolute;
+    list-style: none;
+    top: 69px;
+}
+#oculto > li {
+    background: white;
+    overflow: hidden;
+    transition: all 1s;
+    max-height: 0;
+    width: 202px;
+}
+#visible:hover li {
+    max-height: 500px;
+    overflow: visible;
+}
+
+/* MAIN */
+main .text-prin {
+    font-family: "Courier New";
+    font-size: 14pt;
+    color: orange
+}
+
+/* MEDIA QUERYS */
+
+@media (max-width: 1600px) {
+    body {
+        background-image: url("img/fondo-1200-1600.png");
+    }
+
+    main .text-prin {
+        font-family: "Times New Roman";
+        font-size: 12pt;
+        color: #ffff00;
+    }
+}
+
+@media (max-width: 1200px) {
+    body {
+        background-image: url("img/fondo-800-1200.png");
+    }
+
+    main .text-prin {
+        font-family: "Comic Sans MS";
+        font-size: 10pt;
+        color: #00ff00;
+    }
+}
+
+@media (max-width: 800px) {
+    body {
+        background-image: url("img/fondo-400-800.png");
+    }
+
+    main .text-prin {
+        font-family: Cambria;
+        font-size: 8pt;
+        color: #0000ff;
+    }
+}
+
+@media (max-width: 400px) {
+    body {
+        background-image: url("img/fondo-400.png");
+    }
+
+    main .text-prin {
+        font-family: Calibri;
+        font-size: 6pt;
+        color: #ff0000;
+    }
+}
