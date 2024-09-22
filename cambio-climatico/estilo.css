@@ -5,12 +5,14 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
+    font-family: "Ovo", serif;
+    font-weight: 400;
 }
 
 /* BODY */
 body {
-    height: 100vh;
-    background-image: url("img/fondo-1600.png");
+    min-height: 100vh;
+    background-image: url("../img/fondo-1600.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -39,8 +41,6 @@ header {
     display: block;
     padding: 18px;
     transition: all .2s;
-    font-family: "Ovo", serif;
-    font-weight: 400;
     cursor: pointer;
 }
 #menu a:hover {
@@ -83,59 +83,100 @@ header {
 }
 
 /* MAIN */
+main h2 {
+    padding: 15px 0;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+main section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 30px;
+    gap: 20px;
+}
+
+main article {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+    width: 18%;
+}
+
+main article h3 {
+    font-size: 20px;
+    margin-bottom: 7px;
+}
+
 main .text-prin {
     font-family: "Courier New";
     font-size: 14pt;
-    color: orange
+    color: #d28b1f;
 }
 
 /* MEDIA QUERYS */
 
 @media (max-width: 1600px) {
     body {
-        background-image: url("img/fondo-1200-1600.png");
+        background-image: url("../img/fondo-1200-1600.png");
     }
 
     main .text-prin {
         font-family: "Times New Roman";
         font-size: 12pt;
-        color: #ffff00;
+        color: #d2c61f;
+    }
+    main article {
+        width: 23%;
     }
 }
 
 @media (max-width: 1200px) {
     body {
-        background-image: url("img/fondo-800-1200.png");
+        background-image: url("../img/fondo-800-1200.png");
     }
 
     main .text-prin {
         font-family: "Comic Sans MS";
         font-size: 10pt;
-        color: #00ff00;
+        color: #1fd21f;
+    }
+    main article {
+        width: 31%;
     }
 }
 
 @media (max-width: 800px) {
     body {
-        background-image: url("img/fondo-400-800.png");
+        background-image: url("../img/fondo-400-800.png");
     }
 
     main .text-prin {
         font-family: Cambria;
         font-size: 8pt;
-        color: #0000ff;
+        color: #2b1fd2;
+    }
+
+    main article {
+        width: 47%;
     }
 }
 
 @media (max-width: 400px) {
     body {
-        background-image: url("img/fondo-400.png");
+        background-image: url("../img/fondo-400.png");
     }
 
     main .text-prin {
         font-family: Calibri;
         font-size: 6pt;
-        color: #ff0000;
+        color: #d21f1f;
+    }
+
+    main article {
+        width: 100%;
     }
 }
 
