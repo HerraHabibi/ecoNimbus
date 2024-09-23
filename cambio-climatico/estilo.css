@@ -102,7 +102,7 @@ main article {
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
-    width: 18%;
+    width: 353px;
 }
 
 main article h3 {
@@ -117,6 +117,12 @@ main .text-prin {
 }
 
 /* MEDIA QUERYS */
+
+@media (max-width: 2024px) {
+    main article {
+        width: 18%;
+    }
+}
 
 @media (max-width: 1600px) {
     body {
