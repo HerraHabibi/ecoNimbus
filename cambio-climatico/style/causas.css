@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=Ovo&display=swap");
+
+/* GENERAL */
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Ovo", serif;
+    font-weight: 400;
+}
+
+/* BODY */
+body {
+    min-height: 100vh;
+    background-image: url("../../img/fondo-1600.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* NAVEGADOR*/
+header {
+    position: sticky;
+    top: 0;
+    background: rgb(255, 255, 255);
+    padding: 0px 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+}
+#logo {
+    width: 70px;
+}
+#menu li a {
+    font-size: 18px;
+}
+#menu a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 18px;
+    transition: all .2s;
+    cursor: pointer;
+}
+#menu a:hover {
+    color: rgb(180, 162, 162);
+}
+
+/* NAVEGADOR PRIMER NIVEL */
+#menu {
+    list-style: none;
+    display: table;
+    margin: 25px;
+}
+#menu > li {
+    float: left;
+    position: relative;
+    line-height: 6px;
+    border-bottom: 2px solid transparent;
+    letter-spacing: 1px;
+}
+#menu > li:hover{
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+/*  NAVEGADOR SEGUNDO NIVEL */
+#oculto {
+    position: absolute;
+    list-style: none;
+    top: 69px;
+}
+#oculto > li {
+    background: white;
+    overflow: hidden;
+    transition: all 1s;
+    max-height: 0;
+    width: 202px;
+}
+#visible:hover li {
+    max-height: 500px;
+    overflow: visible;
+}
+
+/* MAIN */
+main h2 {
+    padding: 15px 0;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+main section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 30px;
+    gap: 20px;
+}
+
+main article {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+    width: 353px;
+}
+
+main article h3 {
+    font-size: 20px;
+    margin-bottom: 7px;
+}
+
+main .text-prin {
+    font-family: "Courier New";
+    font-size: 14pt;
+    color: #d28b1f;
+}
+
+/* FOOTER PAGINA */
+.contenedor-footer{
+    position: absolute;
+    width: 100%;
+    background-color: rgb(17, 17, 17);
+    padding: 50px 0 0;
+}
+.redes{
+    display: flex;
+    justify-content: center;
+}
+.redes a{
+    text-decoration: none;
+    padding: 20px;
+    color: white;
+    font-size: 30px;
+    opacity: 0.9;
+}
+.redes a:hover{
+    filter: brightness(0.6);
+    transition: 0.5s;
+}
+.footer-nav{
+    margin: 30px 0;
+}
+.footer-nav ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+.footer-nav ul li a{
+    color: white;
+    text-decoration:none;
+    margin: 20px;
+    font-size: 18px;
+    transition: 0.5s;
+    opacity: 0.7;
+}
+.footer-nav ul li a:hover{
+    opacity: 1;
+}
+.footer-bottom{
+    font-size: 13px;
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+}
+.footer-bottom p{
+    color: white;
+}
+.diseñador{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0 5px;
+}
+
+/* MEDIA QUERYS */
+
+@media (max-width: 2024px) {
+    main article {
+        width: 18%;
+    }
+}
+
+@media (max-width: 1600px) {
+    body {
+        background-image: url("../../img/fondo-1200-1600.png");
+    }
+
+    main .text-prin {
+        font-family: "Times New Roman";
+        font-size: 12pt;
+        color: #d2c61f;
+    }
+    main article {
+        width: 23%;
+    }
+}
+
+@media (max-width: 1200px) {
+    body {
+        background-image: url("../../img/fondo-800-1200.png");
+    }
+
+    main .text-prin {
+        font-family: "Comic Sans MS";
+        font-size: 10pt;
+        color: #1fd21f;
+    }
+    main article {
+        width: 31%;
+    }
+}
+
+@media (max-width: 800px) {
+    body {
+        background-image: url("../../img/fondo-400-800.png");
+    }
+
+    main .text-prin {
+        font-family: Cambria;
+        font-size: 8pt;
+        color: #2b1fd2;
+    }
+
+    main article {
+        width: 47%;
+    }
+}
+
+@media (max-width: 400px) {
+    body {
+        background-image: url("../../img/fondo-400.png");
+    }
+
+    main .text-prin {
+        font-family: Calibri;
+        font-size: 6pt;
+        color: #d21f1f;
+    }
+
+    main article {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1332px) {
+    header {
+        padding: 0 10px;
+    }
+}

@@ -10,7 +10,7 @@
 /* BODY */
 body {
     height: 100vh;
-    background-image: url("img/fondo-1600.png");
+    background-image: url("../img/fondo-1600.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -89,11 +89,69 @@ main .text-prin {
     color: orange
 }
 
+/* FOOTER PAGINA */
+.contenedor-footer{
+    position: absolute;
+    width: 100%;
+    background-color: rgb(17, 17, 17);
+    padding: 50px 0 0;
+}
+.redes{
+    display: flex;
+    justify-content: center;
+}
+.redes a{
+    text-decoration: none;
+    padding: 20px;
+    color: white;
+    font-size: 30px;
+    opacity: 0.9;
+}
+.redes a:hover{
+    filter: brightness(0.6);
+    transition: 0.5s;
+}
+.footer-nav{
+    margin: 30px 0;
+}
+.footer-nav ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+.footer-nav ul li a{
+    color: white;
+    text-decoration:none;
+    margin: 20px;
+    font-size: 18px;
+    transition: 0.5s;
+    opacity: 0.7;
+}
+.footer-nav ul li a:hover{
+    opacity: 1;
+}
+.footer-bottom{
+    font-size: 13px;
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+}
+.footer-bottom p{
+    color: white;
+}
+.diseñador{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0 5px;
+}
+
 /* MEDIA QUERYS */
 
 @media (max-width: 1600px) {
     body {
-        background-image: url("img/fondo-1200-1600.png");
+        background-image: url("../img/fondo-1200-1600.png");
     }
 
     main .text-prin {
@@ -105,7 +163,7 @@ main .text-prin {
 
 @media (max-width: 1200px) {
     body {
-        background-image: url("img/fondo-800-1200.png");
+        background-image: url("../img/fondo-800-1200.png");
     }
 
     main .text-prin {
@@ -117,7 +175,7 @@ main .text-prin {
 
 @media (max-width: 800px) {
     body {
-        background-image: url("img/fondo-400-800.png");
+        background-image: url("../img/fondo-400-800.png");
     }
 
     main .text-prin {
@@ -129,7 +187,7 @@ main .text-prin {
 
 @media (max-width: 400px) {
     body {
-        background-image: url("img/fondo-400.png");
+        background-image: url("../img/fondo-400.png");
     }
 
     main .text-prin {
