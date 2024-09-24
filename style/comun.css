@@ -127,7 +127,7 @@ main .text-prin {
 .contenedor-footer{
     position: absolute;
     width: 100%;
-    background-color: rgb(17, 17, 17);
+    background-color: rgb(226, 226, 226);
     padding: 50px 0 0;
 }
 
@@ -139,7 +139,7 @@ main .text-prin {
 .redes a{
     text-decoration: none;
     padding: 20px;
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 30px;
     opacity: 0.9;
 }
@@ -160,7 +160,7 @@ main .text-prin {
 }
 
 .footer-nav ul li a{
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration:none;
     margin: 20px;
     font-size: 18px;
@@ -174,13 +174,13 @@ main .text-prin {
 
 .footer-bottom{
     font-size: 13px;
-    background-color: black;
+    background-color: rgb(201, 201, 201);
     padding: 20px;
     text-align: center;
 }
 
 .footer-bottom p{
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .diseñador{
