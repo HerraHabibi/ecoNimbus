@@ -18,6 +18,10 @@ body {
     background-position: center;
 }
 
+a {
+    color: #000;
+}
+
 /* NAVEGADOR*/
 header {
     position: sticky;
@@ -40,7 +44,6 @@ header {
 
 #menu a {
     text-decoration: none;
-    color: black;
     display: block;
     padding: 18px;
     transition: all .2s;
@@ -139,7 +142,6 @@ main .text-prin {
 .redes a{
     text-decoration: none;
     padding: 20px;
-    color: rgb(0, 0, 0);
     font-size: 30px;
     opacity: 0.9;
 }
@@ -160,7 +162,6 @@ main .text-prin {
 }
 
 .footer-nav ul li a{
-    color: rgb(0, 0, 0);
     text-decoration:none;
     margin: 20px;
     font-size: 18px;
@@ -177,10 +178,6 @@ main .text-prin {
     background-color: rgb(201, 201, 201);
     padding: 20px;
     text-align: center;
-}
-
-.footer-bottom p{
-    color: rgb(0, 0, 0);
 }
 
 .diseñador{
