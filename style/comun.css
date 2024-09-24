@@ -71,13 +71,13 @@ header {
 }
 
 /*  NAVEGADOR SEGUNDO NIVEL */
-#oculto {
+.oculto {
     position: absolute;
     list-style: none;
     top: 69px;
 }
 
-#oculto > li {
+.oculto > li {
     background: white;
     overflow: hidden;
     transition: all 1s;
@@ -85,7 +85,7 @@ header {
     width: 202px;
 }
 
-#visible:hover li {
+.visible:hover li {
     max-height: 500px;
     overflow: visible;
 }
