@@ -1,0 +1,47 @@
+/* MAIN */
+main section {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+    margin-bottom: 20px;
+}
+
+main article {
+    width: 1571px;
+}
+
+main .text-prin + .text-prin {
+    margin-top: 10px;
+}
+
+main img {
+    display: block;
+    margin: 15px auto 0 auto;
+    width: 40%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+}
+
+/* MEDIA QUERYS */
+@media (max-width: 2024px) {
+    main article {
+        width: 80%;
+    }
+}
+
+@media (max-width: 800px) {
+    main section {
+        padding: 0;
+    }
+
+    main article {
+        width: 90%;
+        padding: 20px 0;
+    }
+
+    main article h3, main .text-prin {
+        padding: 0 20px;
+    }
+
+    main img {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
