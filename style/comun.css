@@ -91,6 +91,10 @@ header {
 }
 
 /* MAIN */
+main {
+    min-height: calc(100vh - 349px);
+}
+
 main h2 {
     padding: 15px 0;
     text-align: center;
