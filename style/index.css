@@ -1,8 +1,44 @@
-main {
-  background-color: rgba(255, 255, 255, .4);
+#banner {
+  background-image: url("../img/fondo1.jpg");
+  width: 100%;
+  padding: 200px 0;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  background-color: rgb(0,0,0,.5);
+  background-blend-mode: soft-light;
+  box-sizing: border-box;
+}
+#banner h2 {
+  color: white;
+  font-size: 40px;
+  font-family: "Ovo", serif;
+  font-weight: bolder;
+  letter-spacing: 5px;
+  text-transform: uppercase;
 }
 
-main h1 {
-  text-align: center;
-  font-size: 4em;
+/* MEDIA QUERYS */
+@media (max-width: 1600px) {
+  #banner{
+    background-image: url("../img/fondo2.jpg");
+  }
+}
+
+@media (max-width: 1200px) {
+  #banner{
+    background-image: url("../img/fondo3.jpg");
+  }
+}
+
+@media (max-width: 800px) {
+  #banner{
+    background-image: url("../img/fondo4.jpg");
+  }
+}
+
+@media (max-width: 400px) {
+  #banner{
+    background-image: url("../img/fondo5.jpg");
+  }
 }
